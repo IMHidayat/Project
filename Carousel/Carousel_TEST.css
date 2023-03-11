@@ -1,0 +1,41 @@
+body {
+  color: #5f5f5f;
+}
+
+/** CAROUSEL **/
+.carousel-item {
+  height: 35rem;
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+}
+
+/** MARKETING **/
+
+.marketing .col-lg-4 {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .marketing .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+}
+
+/** FEATURETTE **/
+.featurette-divider {
+  margin: 4rem 0;
+}
+
+@media (min-width: 992px) {
+  .featurette h2 {
+    margin-top: 5rem;
+  }
+}
+
+/** OTHER **/
+.mt-10 {
+  margin-top: 10rem;
+}
