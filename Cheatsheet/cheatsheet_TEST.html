@@ -21,6 +21,8 @@
       }
     </style>
   </head>
+  <!-- PRETEND THAT I CHANGE SOMETHING HERE  -->
+
   <body class="bg-light">
     <header class="bd-header sticky-xl-top bg-dark text-white border-bottom border-dark py-3">
       <div class="container-fluid d-flex align-items-center">
@@ -32,10 +34,11 @@
       </div>
     </header>
 
-    <div class="grid-container container-fluid">
-      <aside class="px-xl-4 text-muted">
+    <div class="grid-container">
+      <aside class="container-fluid px-xl-4 text-muted">
         <ul class="list-unstyled small">
           <h6 class="pt-4 mb-3 pb-3 border-bottom">On this page</h6>
+          <!--? CONTENTS -->
           <li class="my-2">
             <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#contents_collapse">Contents</button>
             <ul class="list-unstyled collapse" id="contents_collapse">
@@ -45,6 +48,7 @@
               <li><a class="d-inline-flex rounded" href="#figures">Figures</a></li>
             </ul>
           </li>
+          <!--? FORMS -->
           <li class="my-2">
             <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#forms_collapse">Forms</button>
             <ul class="list-unstyled collapse" id="forms_collapse">
@@ -56,6 +60,7 @@
               <li><a class="d-inline-flex align-items-center rounded" href="#validation">Validation</a></li>
             </ul>
           </li>
+          <!--? COMPONENTS -->
           <li class="my-2">
             <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#components_collapse">Components</button>
             <ul class="list-unstyled collapse" id="components_collapse">
@@ -85,17 +90,18 @@
       </aside>
 
       <main class="bg-white">
-        <!--* CONTENTS -->
-        <section class="main-section">
-          <h2 class="main-section-title fw-bold mt-4 py-xl-3 bg-white">Contents</h2>
-
-          <!--* TYPOGRAPHY -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Typography</h3>
-              <a href="#">Documentation</a>
+        <!--? CONTENTS -->
+        <section class="container-fluid mb-5">
+          <h2 class="sticky-title fw-bold mt-4 py-4 py-xl-3 bg-white lh-0">Contents</h2>
+          <!--? TYPOGRAPHY -->
+          <div class="row mb-5 mt-lg-4">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Typography</h3>
+                <a class="documentation" href="#">Documentation</a>
+              </div>
             </section>
-            <section class="content-main">
+            <section class="col-xl-10">
               <div class="mb-5">
                 <div class="display-1 mb-3">Display 1</div>
                 <div class="display-2 mb-3">Display 2</div>
@@ -163,28 +169,30 @@
               </div>
             </section>
           </div>
-
-          <!--* IMAGES -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Images</h3>
-              <a href="#">Documentation</a>
+          <!--? IMAGES -->
+          <div class="row my-5 bg-warningaa">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Images</h3>
+                <a href="#">Documentation</a>
+              </div>
             </section>
 
-            <section class="content-main">
+            <section class="col-xl-10">
               <img src="img/kekw.png" alt="KEKW haha lol rawr XD" class="figure-img rounded mb-4" width="100%" height="200" />
 
               <img src="img/kekw.png" alt="KEKW haha lol rawr XD" class="figure-img img-fluid rounded" width="200" />
             </section>
           </div>
-
-          <!--* TABLES -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Tables</h3>
-              <a href="#">Documentation</a>
+          <!--? TABLES -->
+          <div class="row my-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Tables</h3>
+                <a href="#">Documentation</a>
+              </div>
             </section>
-            <section class="content-main">
+            <section class="col-xl-10">
               <table class="table table-striped">
                 <thead>
                   <tr>
@@ -333,14 +341,15 @@
               </table>
             </section>
           </div>
-
-          <!--* FIGURES -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Figures</h3>
-              <a href="#">Documentation</a>
+          <!--? FIGURES -->
+          <div class="row my-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Figures</h3>
+                <a href="#">Documentation</a>
+              </div>
             </section>
-            <section class="content-main">
+            <section class="col-xl-10">
               <figure class="figure">
                 <img src="img/kekw.png" alt="KEKW haha lol rawr XD" class="figure-img rounded" width="400" height="300" />
                 <figcaption class="figure-caption">KEKW haha lol rawr XD</figcaption>
@@ -349,15 +358,18 @@
           </div>
         </section>
 
-        <section class="main-section" style="height: 100rem">
-          <h2 class="main-section-title fw-bold py-xl-3 bg-white">Forms</h2>
-          <!--* OVERVIEW -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Overview</h3>
-              <a href="#">Documentation</a>
+        <!--? FORMS -->
+        <section class="container-fluid mb-5">
+          <h2 class="sticky-title fw-bold py-xl-3 bg-white">Forms</h2>
+          <!--? OVERVIEW -->
+          <div class="row mb-5 mt-lg-4">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Overview</h3>
+                <a href="#">Documentation</a>
+              </div>
             </section>
-            <section class="content-main">
+            <section class="col-xl-10">
               <div>
                 <form action="#">
                   <div class="mb-3">
@@ -408,80 +420,80 @@
               </div>
             </section>
           </div>
-
-          <!--* DISABLED FORMS -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Disabled Forms</h3>
-              <a href="#">Documentation</a>
+          <!--? DISABLED FORMS -->
+          <div class="row mb-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Disabled Forms</h3>
+                <a href="#">Documentation</a>
+              </div>
             </section>
-            <section class="content-main">
+            <section class="col-xl-10">
               <div>
                 <form action="#">
-                  <div class="mb-3">
+                  <fieldset disabled>
                     <label for="disabled_input_email" class="form-label">Email Address</label>
                     <input type="email" class="disabled form-control" id="disabled_input_email" placeholder="Disabled Input" />
                     <div id="email_help" class="form-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, nemo.</div>
-                  </div>
 
-                  <div class="mb-3">
-                    <label for="input_password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="input_password" />
-                  </div>
-
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="input_check" />
-                    <label for="input_check" class="form-label">Check me out</label>
-                  </div>
-
-                  <fieldset class="mb-3">
-                    <legend>Radio Buttons</legend>
-                    <div class="form-check">
-                      <input type="radio" name="radio" class="form-check-input" id="input_radio" />
-                      <label for="input_radio" class="form-label">Radio button</label>
+                    <div class="mb-3">
+                      <label for="input_password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="input_password" />
                     </div>
-                    <div class="form-check mb-3">
-                      <input type="radio" name="radio" class="form-check-input" id="input_radio" />
-                      <label for="input_radio" class="form-label">Another radio button</label>
+
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="input_check" />
+                      <label for="input_check" class="form-label">Check me out</label>
                     </div>
+
+                    <fieldset class="mb-3">
+                      <legend>Radio Buttons</legend>
+                      <div class="form-check">
+                        <input type="radio" name="radio" class="form-check-input" id="input_radio" />
+                        <label for="input_radio" class="form-label">Radio button</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input type="radio" name="radio" class="form-check-input" id="input_radio" />
+                        <label for="input_radio" class="form-label">Another radio button</label>
+                      </div>
+                    </fieldset>
+
+                    <div class="mb-3">
+                      <label for="custom_file" class="form-label">Upload</label>
+                      <input type="file" class="form-control" id="custom_file" />
+                    </div>
+
+                    <div class="mb-3 form-check form-switch">
+                      <input type="checkbox" class="form-check-input" id="flex_switch_check" checked />
+                      <label for="flex_switch_check" class="form-check-label">Checked switch checkbox input</label>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="custom_range" class="form-label">Example range</label>
+                      <input type="range" class="form-range" id="custom_range" />
+                    </div>
+
+                    <button class="btn btn-primary">Submit</button>
                   </fieldset>
-
-                  <div class="mb-3">
-                    <label for="custom_file" class="form-label">Upload</label>
-                    <input type="file" class="form-control" id="custom_file" />
-                  </div>
-
-                  <div class="mb-3 form-check form-switch">
-                    <input type="checkbox" class="form-check-input" id="flex_switch_check" checked />
-                    <label for="flex_switch_check" class="form-check-label">Checked switch checkbox input</label>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="custom_range" class="form-label">Example range</label>
-                    <input type="range" class="form-range" id="custom_range" />
-                  </div>
-
-                  <button class="btn btn-primary">Submit</button>
                 </form>
               </div>
             </section>
           </div>
-
-          <!--* SIZING -->
-          <div class="content">
-            <section class="content-title">
-              <h3>Sizing</h3>
-              <a href="#">Documentation</a>
+          <!--? SIZING -->
+          <div class="row mb-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Sizing</h3>
+                <a href="#">Documentation</a>
+              </div>
             </section>
-            <section class="content-main">
-              <div>
-                <div class="mb-3"></div>
+            <section class="col-xl-10">
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder=".form-control-lg" />
               </div>
             </section>
           </div>
         </section>
-
-        <section class="main-section"></section>
       </main>
     </div>
   </body>
