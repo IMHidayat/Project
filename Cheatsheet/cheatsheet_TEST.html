@@ -491,6 +491,144 @@
               <div class="mb-3">
                 <input type="text" class="form-control form-control-lg" placeholder=".form-control-lg" />
               </div>
+              <div class="mb-3">
+                <select name="sizing_select" id="sizing_select" class="form-select form-select-lg mb-3">
+                  <option selected>Open this select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-5">
+                <input type="file" class="form-control form-control-lg" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-sm" placeholder=".form-control-sm" />
+              </div>
+              <div class="mb-3">
+                <select name="sizing_select" id="sizing_select" class="form-select form-select-sm mb-3">
+                  <option selected>Open this select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <input type="file" class="form-control form-control-sm" />
+              </div>
+            </section>
+          </div>
+          <!--? INPUT GROUP -->
+          <div class="row mb-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Input Group</h3>
+                <a href="#">Documentation</a>
+              </div>
+            </section>
+            <section class="col-xl-10">
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Username" />
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" />
+                <span class="input-group-text">@example.com</span>
+              </div>
+              <label for="basic_url" class="form-label">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">https://example.com/users/</span>
+                <input type="text" class="form-control" id="form_label" />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" />
+                <span class="input-group-text">.00</span>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">With textarea</span>
+                <textarea name="textarea_input_group" id="textarea_input_group" class="form-control"></textarea>
+              </div>
+            </section>
+          </div>
+          <!--? FLOATING LABELS -->
+          <div class="row mb-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Floating labels</h3>
+                <a href="#">Documentation</a>
+              </div>
+            </section>
+            <section class="col-xl-10">
+              <form action="#">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" placeholder="name@example.com" />
+                  <label for="email">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" placeholder="name@example.com" />
+                  <label for="password">Password</label>
+                </div>
+              </form>
+            </section>
+          </div>
+          <!--? VALIDATION -->
+          <div class="row mb-5">
+            <section class="col-xl-2">
+              <div class="sticky-box-title">
+                <h3>Validation</h3>
+                <a href="#">Documentation</a>
+              </div>
+            </section>
+            <section class="col-xl-10">
+              <form class="row g-3">
+                <section class="col-md-4">
+                  <label for="first_name" class="form-label">First name</label>
+                  <input type="text" id="first_name" class="form-control is-valid" value="Mark" />
+                  <div class="valid-feedback">Looks Good!</div>
+                </section>
+                <section class="col-md-4">
+                  <label for="last_name" class="form-label">Last name</label>
+                  <input type="text" id="last_name" class="form-control is-valid" value="Mark" />
+                  <div class="valid-feedback">Looks Good!</div>
+                </section>
+                <section class="col-md-4">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input type="text" id="username" class="form-control is-invalid" value="Mark" />
+                    <div class="invalid-feedback">Please choose a username.</div>
+                  </div>
+                </section>
+                <section class="col-md-6">
+                  <label for="city" class="form-label">City</label>
+                  <input type="text" id="city" class="form-control is-invalid" required />
+                  <div class="invalid-feedback">Please provide a valid city.</div>
+                </section>
+                <section class="col-md-3">
+                  <label for="state_select" class="form-label">State</label>
+                  <select name="state_select" id="state_select" class="form-select is-invalid" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">Please provide a valid state.</div>
+                </section>
+                <section class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" id="zip" class="form-control is-invalid" />
+                  <div class="invalid-feedback">Please provide a valid zip.</div>
+                </section>
+                <section class="col-md-12">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input is-invalid" id="invalid_check" />
+                    <label id="invali_check" class="form-check-label">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submitting</div>
+                  </div>
+                </section>
+                <section class="col-md-12">
+                  <button class="btn btn-primary">Submit</button>
+                </section>
+              </form>
             </section>
           </div>
         </section>

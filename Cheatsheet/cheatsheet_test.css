@@ -59,12 +59,8 @@ main .sticky-box-title a {
 }
 
 @media (max-width: 1200px) {
-  main .col-lg-2 {
-    margin-bottom: 15rem;
-  }
-
-  main .sticky-box-title {
-    background: red !important;
+  main .col-xl-2 {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -118,7 +114,7 @@ main .sticky-box-title a {
     font-size: 1.5rem;
   }
 
-  main .col-xl-2 + .col-xl-10 {
+  main .col-xl-10 {
     padding: 0 3.25rem;
     /* background-color: red; */
   }
